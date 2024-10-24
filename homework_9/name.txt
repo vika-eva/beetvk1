@@ -1,0 +1,8 @@
+name
+city
+country
+firstname
+car
+home
+dog
+cat
