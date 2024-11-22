@@ -1,7 +1,9 @@
 import math
+import operator
 from statistics import multimode
 from operator import sub, truediv
 from functools import reduce
+
 
 def make_operation(operators:str, *nums:int):
     if operators == "+":
@@ -16,6 +18,25 @@ def make_operation(operators:str, *nums:int):
 print(make_operation("+", 7, 7, 2))
 print(make_operation("-", 5, 5, -10, -20))
 print(make_operation("*", 7, 6))
+
+
+#--------
+
+def make_operat(op, *numbers: list[int | float]):
+    operators = {
+        "+": operator.add,
+        "-": operator.sub,
+        "*": operator.mul
+        }
+    result = numbers[0]
+    for number in range(1, len(numbers)):
+       result = operators[op](result, numbers[number])
+    print(result)
+    return result
+
+make_operat("+", [7, 7, 2])
+make_operat('-', [5, 5, -10, -20])
+make_operat('*', [7, 6])
 
 #def make_operation(operators, *nums:int):
 #    if operators == "+":
