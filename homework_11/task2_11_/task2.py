@@ -117,6 +117,9 @@ def update(contacts):
             search1 = input("Enter your new phone number: ")
             contacts[search_contact]['number'] = search1
             print(f"Contact '{search_contact}' updated.")
+            flag = False
+    if flag:
+        print("Contact not found")
 
 
 def main_list_phone():
