@@ -13,7 +13,7 @@ class StackOne(Stack):
             if item == element:
                 continue
             data_list.append(item)
-        #self.items = data_list
+        self.items = data_list
         print(data_list)
         print(element)
         return element
