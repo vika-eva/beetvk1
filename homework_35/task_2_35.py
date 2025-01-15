@@ -9,11 +9,6 @@ import functools
 import time
 
 
-top = ['explanation',
-       'title',
-       'url',
-       'copyright']
-
 url = 'https://api.nasa.gov/planetary/apod'
 api_key = 'qOdRW9eU7kggJmrc8pOQVxQtpV7lUZvjNlFkgjbL'
 
